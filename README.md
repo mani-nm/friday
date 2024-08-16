@@ -1,9 +1,9 @@
 ## FRIDAY: PDF Document summarizer
 <p align="center">
-    <img src="images/friday_bear.jpeg" alt="Friday AI">
+    <img src="images/friday_bear.jpeg" alt="Friday AI" width="400">
 </p>
 
-Steps:
+Steps:s
 1. Ollama:
 >1) Download and install Ollama
 >2) Pull LLama3.1 model 
