@@ -2,6 +2,7 @@
 <p align="center">
     <img src="images/friday_bear.jpeg" alt="Friday AI" width="600">
 </p>
+
 Steps:
 1. Ollama:
 >1) Download and install Ollama
