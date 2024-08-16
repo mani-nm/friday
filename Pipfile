@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+langchain-huggingface = "*"
+langchain-ollama = "*"
+langchain-community = "*"
+black = "*"
+"pdfminer.six" = "*"
+pdf2image = "*"
+pdfplumber = "*"
+pikepdf = "*"
+pillow = "*"
+pillow-heif = "*"
+unstructured = {extras = ["pdf"], version = "*"}
+langchain-chroma = "*"
+streamlit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

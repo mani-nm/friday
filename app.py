@@ -3,8 +3,6 @@
 # nltk.download('averaged_perceptron_tagger_eng')
 import torch
 import streamlit as st
-from langchain_community.document_loaders import UnstructuredPDFLoader
-from langchain_text_splitters import CharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
@@ -25,9 +23,6 @@ persist_dir = "chromadb"
 db = Chroma(embedding_function=embeddings, persist_directory=persist_dir)
 
 llm = ChatOllama(model="llama3.1", temperature=0.5)
-# question = "how to improve upon the proposed methods in the thesis?"
-# res = generate_response(question, llm, embeddings, db)
-# print(res["result"])
 
 # Page title
 st.set_page_config(page_title="Friday AI")

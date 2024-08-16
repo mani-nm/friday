@@ -1,7 +1,6 @@
 from langchain.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
-# from langchain.chains import VectorDBQA
 from langchain_community.document_loaders import UnstructuredPDFLoader
 
 pdf = "data/CS298_Nag_Mani_Report.pdf"
