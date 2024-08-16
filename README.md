@@ -1,6 +1,6 @@
 ## FRIDAY: PDF Document summarizer
 <p align="center">
-    <img src="images/friday_bear.jpeg" alt="Friday AI" width="600">
+    <img src="images/friday_bear.jpeg" alt="Friday AI">
 </p>
 
 Steps:
