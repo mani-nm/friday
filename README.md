@@ -1,11 +1,16 @@
 ## FRIDAY: PDF Document summarizer
+<p align="center">
+    <img src="images/friday_bear.jpeg" alt="Friday AI" width="400">
+</p>
+
 Environment setup and configuration
 We will be using pipenv for python virtualenv management. Pipenv automatically creates and manages a virtualenv for our project, as well as adds/removes packages from the Pipfile as we install/uninstall packages. It also generates a project Pipfile.lock, which is used to produce deterministic builds.
 *Installation steps:
 >1. If using defualt python: `pip install --user pipenv`
 >2. If using conda (like me): `conda install conda-forge::pipenv`
 
-Create virtualenv for the project: `pipenv shell`
+Create virtualenv for the project using the pipfile.lock file: `pipenv install`
+
 ---------------------------------------
 Steps:
 1. Ollama:
