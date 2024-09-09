@@ -7,9 +7,23 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
 from langchain_ollama import ChatOllama
+import ollama
 
-torch.cuda.empty_cache()
+ollama.pull('llama3.1')
+
 def generate_response(question, model, embeddings, db):
+    """
+    Generate a response to the given question using the specified model and database.
+
+    Args:
+        question (str): The user's query.
+        model: The language model used for generation.
+        embeddings: The embedding function used for retrieval.
+        db: The persistent database used for storing embeddings.
+
+    Returns:
+        str: The generated response.
+    """
     chain = RetrievalQA.from_chain_type(
         llm,
         retriever=db.as_retriever(),
